@@ -71,72 +71,32 @@ export default function IndexPage() {
           <h3 className="text-hxl font-bold mb-8 text-primary">
             Media Coverage
           </h3>
-          <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-x-4 gap-y-8">
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-x-4 gap-y-8 justify-center items-center">
             <div className="relative">
-              <Image
-                alt="COINTELEGRAPH"
-                src="/images/m1.png"
-                layout="fill"
-                objectFit="scale-down"
-              />
+              <img alt="COINTELEGRAPH" src="/images/m1.png" />
             </div>
 
             <div className="relative">
-              <Image
-                alt="Cypto News Point"
-                src="/images/m2.png"
-                layout="fill"
-                objectFit="scale-down"
-              />
+              <img alt="Cypto News Point" src="/images/m2.png" />
             </div>
             <div className="relative">
-              <Image
-                alt="Business Blockchain HQ"
-                src="/images/m3.png"
-                layout="fill"
-                objectFit="scale-down"
-              />
+              <img alt="Business Blockchain HQ" src="/images/m3.png" />
             </div>
             <div className="relative">
-              <Image
-                alt="Daily Alts"
-                src="/images/m4.png"
-                width="240px"
-                height="85px"
-              />
+              <img alt="Daily Alts" src="/images/m4.png" />
             </div>
 
             <div className="relative">
-              <Image
-                alt="Europe World News"
-                src="/images/m5.png"
-                layout="fill"
-                objectFit="scale-down"
-              />
+              <img alt="Europe World News" src="/images/m5.png" />
             </div>
             <div className="relative">
-              <Image
-                alt="The American Reporter"
-                src="/images/m6.png"
-                layout="fill"
-                objectFit="scale-down"
-              />
+              <img alt="The American Reporter" src="/images/m6.png" />
             </div>
             <div className="relative">
-              <Image
-                alt="The Crypto Breaking News"
-                src="/images/m7.png"
-                layout="fill"
-                objectFit="scale-down"
-              />
+              <img alt="The Crypto Breaking News" src="/images/m7.png" />
             </div>
             <div className="relative">
-              <Image
-                alt="Coss Exchange"
-                src="/images/m8.png"
-                width="354px"
-                height="177px"
-              />
+              <img alt="Coss Exchange" src="/images/m8.png" />
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ const routes = [
   {
     title: 'Client Hub',
     route: 'https://hub.tokenizer.cc',
-    className: 'btn-primary',
+    className: 'btn-primary text-white',
     blank: true,
   },
 ];
@@ -25,18 +25,12 @@ export default function Header() {
       <div className="flex flex-wrap items-center justify-between lg:container px-4 py-6 mx-auto md:flex-no-wrap md:px-6">
         <div className="flex items-center">
           <Link href="/">
-            <Image
-              src="/images/logo.png"
-              width={40}
-              height={40}
-              priority
-              alt="Tokenizer logo"
-            />
+            <img src="/images/logo.png" alt="Tokenizer logo" />
           </Link>
         </div>
 
         <button
-          className="flex items-center block px-3 py-2 text-white border border-white rounded md:hidden"
+          className="flex items-center px-3 py-2 text-white border border-white rounded md:hidden"
           onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
         >
           <svg
@@ -51,17 +45,21 @@ export default function Header() {
 
         <ul
           className={cn(
-            'md:flex flex-col md:flex-row md:items-center md:justify-center text-gray-500 w-full md:w-auto',
+            'md:flex flex-col md:flex-row md:items-center md:justify-center w-full md:w-auto',
             mobileMenuIsOpen ? `block` : `hidden`,
           )}
         >
           {routes.map(({ route, title, className, blank }) => (
-            <li className="mt-3 md:mt-0 md:ml-6" key={title}>
+            <li className="mt-3 md:mt-0 md:ml-6 lg:px-5 md:px-2" key={title}>
               <Link href={route}>
                 <a
-                  className={cn('block text-secondary', {
-                    [`${className}`]: className !== undefined,
-                  })}
+                  className={cn(
+                    'block text-xl',
+                    {
+                      [`${className} text-white`]: className !== undefined,
+                    },
+                    { 'text-secondary': className === undefined },
+                  )}
                   target={blank ? '_blank' : ''}
                 >
                   {title}
