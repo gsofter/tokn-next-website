@@ -162,20 +162,62 @@ export default function IndexPage() {
       </div>
       {/* Begin new section; Latest on Tokenizer */}
       <div className="flex flex-col items-center justify-center space-y-12 bg-white py-32">
-        <div className="flex flex-col items-center justify-center text-secondary py-160 lg:max-w-914 sm:container">
+        <div className="flex flex-col items-center justify-center text-secondary py-160 sm:container">
           <h3 className="text-hxl font-bold mb-12 text-primary">
             Latest on Tokenizer
           </h3>
-          <p className="text-center text-hmd italic mb-8">
-            “...blockchain technology is taking hold very quickly in the
-            institutional investment community (PayPal, Goldman Sachs, JP
-            Morgan, Ant Group), and will bring significant value to our clients
-            through its ability to enhance transparency, liquidity,
-            accessibility, and security in real estate investments.
+          <div className="grid grid-cols-3 gap-x-16">
+            <BlogItem
+              key="1"
+              imageUrl="/images/b1.png"
+              title="TomoChain is Now Listed on Tokenizer DEX."
+              blogLink="https://tokenizer.cc"
+            />
+            <BlogItem
+              key="2"
+              imageUrl="/images/b2.png"
+              title="Are Asset-Backed Tokens the Blockchain Application of the Future?"
+              blogLink="https://tokenizer.cc"
+            />
+            <BlogItem
+              key="3"
+              imageUrl="/images/b3.png"
+              title="TomoChain is Now Listed on Tokenizer DEX."
+              blogLink="https://tokenizer.cc"
+            />
+          </div>
+          <button className="btn-primary font-medium text-hlg mt-12">
+            Discover More
+          </button>
+        </div>
+      </div>
+      {/* Begin new section; Request our Whitepaper */}
+      <div className="flex flex-col items-center justify-center space-y-12 bg-home-3 bg-no-repeat bg-cover py-20">
+        <div className="flex flex-col items-center justify-center lg:container text-white py-160 lg:max-w-914">
+          <h3 className="text-hxl font-bold text-white">
+            Request our Whitepaper
+          </h3>
+          <p className="text-center text-xl mt-6">
+            Learn more about what we do and how we do it
           </p>
-          <p className="text-center text-hmd">
-            - Andy Strott, Resolute U.S. Real Estate Fund I
-          </p>
+          <div className="container lg:w-8/12 md:w-full text-center mt-12">
+            <form className="container w-full">
+              <input
+                className="rounded-full text-xl text-secondary py-4 px-4 w-full"
+                placeholder="Name Lastname"
+              />
+              <input
+                className="rounded-full text-xl text-secondary py-4 px-4 w-full mt-6"
+                placeholder="Enter your email"
+              />
+              <button
+                className="btn-primary text-primary bg-white text-2xl mt-10"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </>

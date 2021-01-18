@@ -26,6 +26,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         'home-1': "url('/images/bg_home1.png')",
         'home-2': "url('/images/bg_home2.png')",
+        'home-3': "url('/images/bg_home3.png')",
       }),
       padding: {
         px160: '160px',
@@ -40,6 +41,12 @@ module.exports = {
       maxWidth: {
         672: '672px',
         914: '914px',
+      },
+      borderColor: {
+        primary: '#2F80ED',
+      },
+      boxShadow: {
+        primary: '4px 4px 4px rgba(0, 0, 0, 0.33)',
       },
     },
   },
