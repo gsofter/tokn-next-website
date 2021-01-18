@@ -1,27 +1,37 @@
-import Link from "next/link";
-import { useState } from "react";
-import cn from "classnames";
-import Image from "next/image";
+import Link from 'next/link';
+import { useState } from 'react';
+import cn from 'classnames';
+import Image from 'next/image';
+
+const routes = [
+  { title: 'Home', route: '/' },
+  { title: 'About Us', route: '/about' },
+  { title: 'Solutions', route: '/solutions' },
+  { title: 'Resources', route: '/Resources' },
+  { title: 'Contact Us', route: '/contactus' },
+  {
+    title: 'Client Hub',
+    route: 'https://hub.tokenizer.cc',
+    className: 'btn-primary',
+    blank: true,
+  },
+];
 
 export default function Header() {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
 
   return (
-    <header className="bg-green-600">
+    <header className="bg-secondary">
       <div className="flex flex-wrap items-center justify-between lg:container px-4 py-6 mx-auto md:flex-no-wrap md:px-6">
         <div className="flex items-center">
-          <Image
-            src="/tailwind-logo.svg"
-            width={40}
-            height={40}
-            priority
-            alt="Tailwind CSS logo"
-          />
-
           <Link href="/">
-            <a className="text-lg md:text-xl font-bold ml-3 text-white">
-              Next.js Starter Tailwind
-            </a>
+            <Image
+              src="/images/logo.png"
+              width={40}
+              height={40}
+              priority
+              alt="Tokenizer logo"
+            />
           </Link>
         </div>
 
@@ -41,17 +51,21 @@ export default function Header() {
 
         <ul
           className={cn(
-            "md:flex flex-col md:flex-row md:items-center md:justify-center text-sm w-full md:w-auto",
-            mobileMenuIsOpen ? `block` : `hidden`
+            'md:flex flex-col md:flex-row md:items-center md:justify-center text-gray-500 w-full md:w-auto',
+            mobileMenuIsOpen ? `block` : `hidden`,
           )}
         >
-          {[
-            { title: "Home", route: "/" },
-            { title: "About", route: "/about" },
-          ].map(({ route, title }) => (
+          {routes.map(({ route, title, className, blank }) => (
             <li className="mt-3 md:mt-0 md:ml-6" key={title}>
               <Link href={route}>
-                <a className="block text-white">{title}</a>
+                <a
+                  className={cn('block text-secondary', {
+                    [`${className}`]: className !== undefined,
+                  })}
+                  target={blank ? '_blank' : ''}
+                >
+                  {title}
+                </a>
               </Link>
             </li>
           ))}
