@@ -48,6 +48,9 @@ module.exports = {
       boxShadow: {
         primary: '4px 4px 4px rgba(0, 0, 0, 0.33)',
       },
+      minHeight: {
+        70: '70px',
+      },
     },
   },
 };

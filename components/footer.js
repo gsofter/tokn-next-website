@@ -3,13 +3,13 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className="flex flex-col">
-      <section className="w-full flex items-center justify-center bg-secondary py-20">
-        <div className="flex flex-row items-center justify-center container">
-          <div className="md:w-5/12">
+      <section className="w-full flex items-center justify-center bg-secondary py-5 md:py-20 px-6">
+        <div className="flex flex-col md:flex-row items-center justify-center container">
+          <div className="w-full md:w-5/12">
             <img src="./images/footer_logo.png" />
           </div>
-          <div className="md:w-7/12 ">
-            <div className="w-full grid grid-cols-3 gap-x-4 gap-y-8">
+          <div className="w-full md:w-7/12 ">
+            <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-y-8">
               <a href="/" className="text-secondary text-xl">
                 Home
               </a>
@@ -47,8 +47,8 @@ export default function Footer() {
                 Terms of Use
               </a>
             </div>
-            <div className="w-full container mt-12 flex flex-row">
-              <div className="w-8/12 flex flex-col items-start justify-center">
+            <div className="flex flex-col md:flex-row w-full container mt-12 ">
+              <div className="flex flex-col items-start justify-center w-full md:w-8/12">
                 <label className="text-primary text-xl">
                   Subscribe to our newsletter.
                 </label>
@@ -61,8 +61,11 @@ export default function Footer() {
                   placeholder="Enter your Name here"
                 />
               </div>
-              <div className="w-4/12 flex flex-col items-start justify-end px-4">
-                <button className="btn-primary w-full text-xl" type="submit">
+              <div className="flex flex-col items-start justify-end mt-2 md:ml-2 w-full md:w-4/12">
+                <button
+                  className="btn-primary w-full text-xl py-2"
+                  type="submit"
+                >
                   Submit
                 </button>
               </div>
@@ -70,7 +73,7 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <section className="w-full flex items-center justify-center bg-footer py-20">
+      <section className="w-full flex items-center justify-center bg-footer px-6 py-10 md:py-20">
         <div className="container text-white">
           <div className="w-full flex flex-col justify-between ">
             <p> (C) 2021 Defi Ventures Inc. </p>
@@ -101,8 +104,7 @@ export default function Footer() {
               customers or users of our website services.
             </p>
             <a className="mt-6" href="/">
-              {' '}
-              READ MORE{' '}
+              READ MORE
             </a>
           </div>
         </div>
