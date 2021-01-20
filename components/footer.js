@@ -10,40 +10,40 @@ export default function Footer() {
           </div>
           <div className="w-full md:w-7/12 ">
             <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-y-8">
-              <a href="/" className="text-secondary text-xl">
+              <a href="/" className="text-secondary text-base">
                 Home
               </a>
-              <a href="/" className="text-secondary text-xl">
+              <a href="/" className="text-secondary text-base">
                 About Us
               </a>
-              <a href="/" className="text-secondary text-xl">
+              <a href="/" className="text-secondary text-base">
                 Resources
               </a>
-              <a href="/" className="text-secondary text-xl">
+              <a href="/" className="text-secondary text-base">
                 Contact Us
               </a>
-              <a href="/" className="text-secondary text-xl">
+              <a href="/" className="text-secondary text-base">
                 Client Hub
               </a>
-              <a href="/" className="text-secondary text-xl">
+              <a href="/" className="text-secondary text-base">
                 Exchange
               </a>
-              <a href="/" className="text-secondary text-xl">
+              <a href="/" className="text-secondary text-base">
                 Launchpad
               </a>
-              <a href="/" className="text-secondary text-xl">
+              <a href="/" className="text-secondary text-base">
                 Issuer
               </a>
-              <a href="/" className="text-secondary text-xl">
+              <a href="/" className="text-secondary text-base">
                 FAQ
               </a>
-              <a href="/" className="text-secondary text-xl">
+              <a href="/" className="text-secondary text-base">
                 Careers
               </a>
-              <a href="/" className="text-secondary text-xl">
+              <a href="/" className="text-secondary text-base">
                 Privacy Policy
               </a>
-              <a href="/" className="text-secondary text-xl">
+              <a href="/" className="text-secondary text-base">
                 Terms of Use
               </a>
             </div>

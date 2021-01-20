@@ -4,7 +4,6 @@ import cn from 'classnames';
 import Image from 'next/image';
 
 const routes = [
-  { title: 'Home', route: '/' },
   { title: 'About Us', route: '/about' },
   { title: 'Solutions', route: '/solutions' },
   { title: 'Resources', route: '/Resources' },
@@ -25,7 +24,11 @@ export default function Header() {
       <div className="flex flex-wrap items-center justify-between lg:container px-4 py-6 mx-auto md:flex-no-wrap md:px-6">
         <div className="flex items-center">
           <Link href="/">
-            <img src="/images/logo.png" alt="Tokenizer logo" />
+            <img
+              src="/images/logo.png"
+              alt="Tokenizer logo"
+              className="w-3/4"
+            />
           </Link>
         </div>
 
@@ -54,7 +57,7 @@ export default function Header() {
               <Link href={route}>
                 <a
                   className={cn(
-                    'block text-xl',
+                    'block text-base',
                     {
                       [`${className} text-white`]: className !== undefined,
                     },

@@ -8,13 +8,13 @@ export default function IndexPage() {
       {/* Begin hero section */}
       <div className="flex flex-col items-center justify-center bg-home-1 bg-no-repeat bg-cover px-6 py-10 md:py-40">
         <div className="flex flex-col items-center justify-center container text-white md:max-w-2xl">
-          <h3 className="text-hxl font-bold text-center">
+          <h3 className="text-3xl md:text-4xl font-bold text-center">
             Building the future of DeFi
           </h3>
-          <h5 className="text-2xl italic font-medium mt-4">
+          <h5 className="text-xl italic font-medium mt-4">
             Our New Venue linking Capital to Investment Projects
           </h5>
-          <p className="text-center text-xl mt-4 md:mt-10">
+          <p className="text-center text-base mt-4 md:mt-10">
             At Tokenizer, we’re harnessing the power of blockchain to design and
             build an end-to-end decentralized finance and banking ecosystem. We
             aim to innovative, build efficiencies and advance capital creation
@@ -22,13 +22,13 @@ export default function IndexPage() {
             high-quality investment opportunities via tokenized listings and a
             robust marketplace
           </p>
-          <button className="btn-primary font-medium text-white text-xl md:text-2xl mt-4 md:mt-12 w-full md:w-auto">
+          <button className="btn-primary font-medium text-white text-base md:text-xl mt-4 md:mt-12 w-full md:w-auto">
             Request Demo
           </button>
         </div>
       </div>
 
-      {/* Begin new section; Instant settlements */}
+      {/* Begin new section; Instant settlements. Built-in Compliance. */}
       <div className="flex flex-col items-center justify-center bg-white bg-no-repeat bg-cover px-6 py-10 md:py-36">
         <div className="flex flex-col items-center justify-center container text-white lg:max-w-914">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
