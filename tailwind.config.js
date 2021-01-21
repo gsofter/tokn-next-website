@@ -46,7 +46,7 @@ module.exports = {
         primary: '#2F80ED',
       },
       boxShadow: {
-        primary: '4px 4px 4px rgba(0, 0, 0, 0.33)',
+        primary: '4px 4px 4px rgba(0, 0, 0, 0.17)',
       },
       minHeight: {
         70: '70px',

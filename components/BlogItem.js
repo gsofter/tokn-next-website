@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 const BlogItem = ({ title, blogLink, imageUrl }) => {
   return (
@@ -6,11 +5,11 @@ const BlogItem = ({ title, blogLink, imageUrl }) => {
       <div className="container w-full">
         <img src={imageUrl} className="w-full" />
       </div>
-      <p className="text-secondary text-xl mt-4 md:mt-10 md:min-h-xl md:min-h-70">
+      <p className="text-secondary text-base mt-4 md:mt-10 md:min-h-xl md:min-h-70">
         {title}
       </p>
       <Link href={blogLink} className="mt-10">
-        <p className="text-primary text-xl"> Read More </p>
+        <p className="text-primary text-base"> Read More </p>
       </Link>
     </div>
   );

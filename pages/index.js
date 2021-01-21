@@ -7,7 +7,7 @@ export default function IndexPage() {
     <>
       {/* Begin hero section */}
       <div className="flex flex-col items-center justify-center bg-home-1 bg-no-repeat bg-cover px-6 py-10 md:py-40">
-        <div className="flex flex-col items-center justify-center container text-white md:max-w-2xl">
+        <div className="flex flex-col items-center justify-center container text-white max-w-xl">
           <h3 className="text-3xl md:text-4xl font-bold text-center">
             Building the future of DeFi
           </h3>
@@ -22,7 +22,7 @@ export default function IndexPage() {
             high-quality investment opportunities via tokenized listings and a
             robust marketplace
           </p>
-          <button className="btn-primary font-medium text-white text-base md:text-xl mt-4 md:mt-12 w-full md:w-auto">
+          <button className="btn-primary font-medium text-white text-xl mt-4 md:mt-12 w-full md:w-auto">
             Request Demo
           </button>
         </div>
@@ -30,11 +30,11 @@ export default function IndexPage() {
 
       {/* Begin new section; Instant settlements. Built-in Compliance. */}
       <div className="flex flex-col items-center justify-center bg-white bg-no-repeat bg-cover px-6 py-10 md:py-36">
-        <div className="flex flex-col items-center justify-center container text-white lg:max-w-914">
+        <div className="flex flex-col items-center justify-center container text-white max-w-2xl">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
             Instant settlements. Built-in Compliance.
           </h3>
-          <p className="text-center text-xl md:text-2xl mt-6 md:mt-12 text-secondary">
+          <p className="text-center text-base mt-6 md:mt-12 text-secondary">
             Our secure regulatory-compliant infrastructure is built to offer
             seamless issuance, trading, and distribution services for high
             quality asset-backed digital securities. <br /> <br />A dedicated
@@ -43,7 +43,7 @@ export default function IndexPage() {
             clients with the most efficient and scalable solutions for both
             retail and institutional offerings.
           </p>
-          <button className="btn-primary font-medium text-white text-xl md:text-2xl w-full md:w-auto mt-6 md:mt-12">
+          <button className="btn-primary font-medium text-white text-xl w-full md:w-auto mt-6 md:mt-12">
             Learn more About Us
           </button>
         </div>
@@ -51,17 +51,17 @@ export default function IndexPage() {
 
       {/* Begin new section; Why Tokenize? */}
       <div className="flex flex-col items-center justify-center bg-home-2 bg-no-repeat bg-cover px-6 py-10 md:py-20">
-        <div className="flex flex-col items-center justify-center lg:container text-white py-160 lg:max-w-914">
+        <div className="flex flex-col items-center justify-center text-white py-160 max-w-xl">
           <h3 className="text-3xl md:text-4xl font-bold text-white text-center">
             Why Tokenize?
           </h3>
-          <p className="text-center text-hmd mt-4 md:mt-8">
+          <p className="text-center text-base mt-4 md:mt-8">
             Our proprietary suite of services automates every step from issuance
             and fundraising to investor management and annual audits. We take
             pride in framing simple, self-serviced solutions to address complex,
             composite problems.
           </p>
-          <button className="btn-primary font-medium text-white text-xl md:text-hlg w-full md:w-auto mt-4 md:mt-8">
+          <button className="btn-primary font-medium text-white text-xl w-full md:w-auto mt-4 md:mt-8">
             Access our Solutions
           </button>
         </div>
@@ -105,18 +105,18 @@ export default function IndexPage() {
 
       {/* Begin new section; Industry Recognition */}
       <div className="flex flex-col items-center justify-center bg-secondary px-6 py-10 md:py-20">
-        <div className="flex flex-col items-center justify-center text-secondary lg:max-w-914 container">
+        <div className="flex flex-col items-center justify-center text-secondary container px-20">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
             Industry Recognition
           </h3>
-          <p className="text-center text-xl italic mt-4 md:mt-8">
+          <p className="text-center text-base italic mt-4 md:mt-8">
             “...blockchain technology is taking hold very quickly in the
             institutional investment community (PayPal, Goldman Sachs, JP
             Morgan, Ant Group), and will bring significant value to our clients
             through its ability to enhance transparency, liquidity,
             accessibility, and security in real estate investments.
           </p>
-          <p className="text-center text-xl mt-4 md:mt-8">
+          <p className="text-center text-base mt-4 md:mt-8">
             - Andy Strott, Resolute U.S. Real Estate Fund I
           </p>
         </div>
@@ -127,7 +127,7 @@ export default function IndexPage() {
           <h3 className="text-3xl md:text-4xl font-bold text-primary">
             Latest on Tokenizer
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-16 mt-6 md:mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-20 mt-6 md:mt-12">
             <BlogItem
               key="1"
               imageUrl="/images/b1.png"
@@ -147,7 +147,7 @@ export default function IndexPage() {
               blogLink="https://tokenizer.cc"
             />
           </div>
-          <button className="btn-primary font-medium text-xl md:text-hlg mt-6 md:mt-12 w-full md:w-80">
+          <button className="btn-primary font-medium text-xl mt-6 md:mt-12 w-full md:w-80">
             Discover More
           </button>
         </div>
@@ -164,15 +164,15 @@ export default function IndexPage() {
           <div className="container w-full lg:w-8/12 text-center mt-4 md:mt-12">
             <form className="container w-full">
               <input
-                className="rounded-full text-xl text-secondary py-4 px-8 w-full"
+                className="rounded-full text-base text-secondary py-4 px-8 w-full"
                 placeholder="Name Lastname"
               />
               <input
-                className="rounded-full text-xl text-secondary py-4 px-8 w-full mt-6"
+                className="rounded-full text-base text-secondary py-4 px-8 w-full mt-6"
                 placeholder="Enter your email"
               />
               <button
-                className="btn-primary text-primary bg-white text-xl md:text-2xl mt-4 md:mt-10 w-full md:w-80 px-8"
+                className="btn-primary text-primary bg-white text-xl mt-4 md:mt-10 w-full md:w-80 px-8"
                 type="submit"
               >
                 Submit
