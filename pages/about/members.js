@@ -6,12 +6,16 @@ const leaders = [
     firstName: 'manindra',
     lastName: 'ma jumar',
     role: 'Chief Executive Officer',
+    description:
+      'As an experienced entrepreneur with a penchant for new technology, Manindra has worked in international business for over 7 years in 15+ countries. Experienced in AI, AR & Blockchain, he has launched several products in his entrepreneurial and professional career and continues to inspire and innovate as Founder & CEO at Tokenizer. He holds an MBA from the Hult International Business School (San Francisco, USA) Bachelor’s in Business Administration from the Edinburgh Napier University (Scotland, UK).',
   },
   {
     photoSrc: `${__dirname}images/members/manindra_ma_jumar.png`,
     firstName: 'manindra',
     lastName: 'ma jumar',
     role: 'Chief Executive Officer',
+    description:
+      'As an experienced entrepreneur with a penchant for new technology, Manindra has worked in international business for over 7 years in 15+ countries. Experienced in AI, AR & Blockchain, he has launched several products in his entrepreneurial and professional career and continues to inspire and innovate as Founder & CEO at Tokenizer. He holds an MBA from the Hult International Business School (San Francisco, USA) Bachelor’s in Business Administration from the Edinburgh Napier University (Scotland, UK).',
   },
 ];
 export default function AboutPage() {
