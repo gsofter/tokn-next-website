@@ -44,6 +44,7 @@ module.exports = {
       },
       borderColor: {
         primary: '#2F80ED',
+        secondary: 'rgba(47, 128, 237, 0.21)',
       },
       boxShadow: {
         primary: '4px 4px 4px rgba(0, 0, 0, 0.17)',

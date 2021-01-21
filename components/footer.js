@@ -6,7 +6,7 @@ export default function Footer() {
       <section className="w-full flex items-center justify-center bg-secondary py-5 md:py-20 px-6">
         <div className="flex flex-col md:flex-row items-center justify-center container">
           <div className="w-full md:w-5/12">
-            <img src="./images/footer_logo.png" />
+            <img src={`${__dirname}images/footer_logo.png`} />
           </div>
           <div className="w-full md:w-7/12 ">
             <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-y-8">
