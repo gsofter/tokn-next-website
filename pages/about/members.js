@@ -1,6 +1,6 @@
 import LeaderMember from '../../components/LeaderMember';
 import TeamMember from '../../components/TeamMember';
-import { leaders, members } from './data';
+import { leaders, members } from '../../constants/members.js';
 
 export default function MembersPage() {
   return (
