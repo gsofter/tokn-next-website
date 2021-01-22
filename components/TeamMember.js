@@ -1,4 +1,4 @@
-export default function LeaderMember({
+export default function TeamMember({
   photoSrc,
   firstName,
   lastName,
