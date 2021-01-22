@@ -30,7 +30,7 @@ export default function IndexPage() {
       <div className="flex flex-col items-center justify-center bg-white bg-no-repeat bg-cover px-6 py-10 md:py-36">
         <div className="flex flex-col items-center justify-center container text-white max-w-2xl">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
-            Instant settlements. Built-in Compliance.
+            Instant settlements. <br /> Built-in Compliance.
           </h3>
           <p className="text-center text-base mt-6 md:mt-12 text-secondary">
             Our secure regulatory-compliant infrastructure is built to offer
