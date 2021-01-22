@@ -1,4 +1,5 @@
 import LeaderMember from '../../components/LeaderMember';
+import TeamMember from '../../components/TeamMember';
 import { leaders, members } from './data';
 
 export default function MembersPage() {
@@ -30,7 +31,7 @@ export default function MembersPage() {
           <hr className="border-secondary border-t-4 my-8" />
           <div className="leaders grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
             {members.map(({ photoSrc, firstName, lastName, role }, index) => (
-              <LeaderMember
+              <TeamMember
                 key={index}
                 photoSrc={photoSrc}
                 firstName={firstName}
