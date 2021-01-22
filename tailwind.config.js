@@ -16,6 +16,7 @@ module.exports = {
       primary: '#2F80ED',
       secondary: '#828282',
       danger: '#e3342f',
+      footer: '#333333',
     }),
 
     fontFamily: {

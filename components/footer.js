@@ -1,69 +1,89 @@
 import Link from 'next/link';
+import {
+  FaInstagram,
+  FaFacebook,
+  FaTelegramPlane,
+  FaLinkedinIn,
+  FaTwitter,
+} from 'react-icons/fa';
+
+import { AiFillTwitterCircle } from 'react-icons/ai';
 
 export default function Footer() {
   return (
     <footer className="flex flex-col">
-      <section className="w-full flex items-center justify-center bg-secondary py-5 md:py-20 px-6">
+      <section className="w-full flex items-center justify-center bg-secondary py-5 md:py-16 px-6">
         <div className="flex flex-col md:flex-row items-center justify-center container">
-          <div className="w-full md:w-5/12">
-            <img src={`${__dirname}images/footer_logo.png`} />
+          <div className="w-full md:w-5/12 md:-my-16">
+            <img
+              src={`${__dirname}images/footer_logo.png`}
+              width="400px"
+              height="400px"
+            />
           </div>
           <div className="w-full md:w-7/12 ">
-            <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-y-8">
-              <a href="/" className="text-secondary text-base">
-                Home
-              </a>
+            <div className="w-full grid grid-flow-row sm:grid-flow-col grid-rows-5 gap-x-4 gap-y-2">
+              {/* <div className="flex flex-col justify-start"> */}
+              <p className="font-bold text-base text-secondary"> Company </p>
               <a href="/" className="text-secondary text-base">
                 About Us
               </a>
               <a href="/" className="text-secondary text-base">
-                Resources
-              </a>
-              <a href="/" className="text-secondary text-base">
-                Contact Us
-              </a>
-              <a href="/" className="text-secondary text-base">
-                Client Hub
-              </a>
-              <a href="/" className="text-secondary text-base">
-                Exchange
-              </a>
-              <a href="/" className="text-secondary text-base">
-                Launchpad
-              </a>
-              <a href="/" className="text-secondary text-base">
-                Issuer
-              </a>
-              <a href="/" className="text-secondary text-base">
-                FAQ
+                Home
               </a>
               <a href="/" className="text-secondary text-base">
                 Careers
               </a>
               <a href="/" className="text-secondary text-base">
-                Privacy Policy
+                Contact Us
+              </a>
+              {/* </div>
+              <div className="flex flex-col justify-start"> */}
+              <p className="font-bold text-base text-secondary">Solutions </p>
+              <a href="/" className="text-secondary text-base">
+                Issuer
               </a>
               <a href="/" className="text-secondary text-base">
-                Terms of Use
+                Launchpad
               </a>
+              <a href="/" className="text-secondary text-base">
+                Exchange
+              </a>
+              <a href="/" className="text-secondary text-base">
+                Defi Hub
+              </a>
+              {/* </div>
+              <div className="flex flex-col justify-start"> */}
+              <p className="font-bold text-base text-secondary">Information</p>
+              <a href="/" className="text-secondary text-base">
+                FAQ
+              </a>
+              <a href="/" className="text-secondary text-base">
+                Terms
+              </a>
+              <a href="/" className="text-secondary text-base">
+                Privacy
+              </a>
+              <a href="/" className="text-secondary text-base">
+                Resources
+              </a>
+              {/* </div> */}
             </div>
-            <div className="flex flex-col md:flex-row w-full container mt-12 ">
-              <div className="flex flex-col items-start justify-center w-full md:w-8/12">
-                <label className="text-primary text-xl">
-                  Subscribe to our newsletter.
-                </label>
+            <div className="flex flex-col md:flex-col w-full container mt-12 ">
+              <label className="text-primary text-base">
+                Subscribe to our newsletter.
+              </label>
+              <div className="flex flex-col md:flex-row w-full mt-4">
                 <input
-                  className="rounded-full bg-white border border-primary text-xl border-solid px-8 py-2 mt-4 w-full"
-                  placeholder="Enter your Name here"
+                  className="rounded-full bg-white border border-primary text-base border-solid px-8 py-2 w-full md:w-1/4"
+                  placeholder="Name"
                 />
                 <input
-                  className="rounded-full bg-white border border-primary text-xl border-solid px-8 py-2 mt-4 w-full"
-                  placeholder="Enter your Name here"
+                  className="rounded-full bg-white border border-primary text-base border-solid px-8 py-2 mt-4 md:mt-0 ml-0 md:ml-4 w-full md:w-1/2"
+                  placeholder="Email"
                 />
-              </div>
-              <div className="flex flex-col items-start justify-end mt-2 md:ml-2 w-full md:w-4/12">
                 <button
-                  className="btn-primary w-full text-xl py-2"
+                  className="btn-primary text-base py-2 shadow-none h-full ml-0 mt-4 md:mt-0 md:ml-4 w-full md:w-1/4"
                   type="submit"
                 >
                   Submit
@@ -75,9 +95,25 @@ export default function Footer() {
       </section>
       <section className="w-full flex items-center justify-center bg-footer px-6 py-10 md:py-20">
         <div className="container text-white">
-          <div className="w-full flex flex-col justify-between ">
+          <div className="w-full flex flex-col md:flex-row justify-between ">
             <p> (C) 2021 Defi Ventures Inc. </p>
-            <div className=""></div>
+            <div className="grid grid-cols-5 gap-x-4 mt-4 md:mt-0">
+              <button className="bg-white text-footer rounded-full p-2">
+                <FaInstagram className="text-2xl" />
+              </button>
+              <button className="bg-white text-footer rounded-full p-2">
+                <FaFacebook className="text-2xl" />
+              </button>
+              <button className="bg-white text-footer rounded-full p-2">
+                <FaTelegramPlane className="text-2xl" />
+              </button>
+              <button className="bg-white text-footer rounded-full p-2">
+                <FaTwitter className="text-2xl" />
+              </button>
+              <button className="bg-white text-footer rounded-full p-2">
+                <FaLinkedinIn className="text-2xl" />
+              </button>
+            </div>
           </div>
           <hr className="mt-10" />
           <div className="w-full flex flex-col items-start justify-center mt-10">

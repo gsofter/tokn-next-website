@@ -103,7 +103,7 @@ export default function IndexPage() {
 
       {/* Begin new section; Industry Recognition */}
       <div className="flex flex-col items-center justify-center bg-secondary px-6 py-10 md:py-20">
-        <div className="flex flex-col items-center justify-center text-secondary container px-20">
+        <div className="flex flex-col items-center justify-center text-secondary container px-0 md:px-20">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
             Industry Recognition
           </h3>
@@ -122,7 +122,7 @@ export default function IndexPage() {
       {/* Begin new section; Latest on Tokenizer */}
       <div className="flex flex-col items-center justify-center bg-white py-10 md:py-32 px-6">
         <div className="flex flex-col items-center justify-center text-secondary container">
-          <h3 className="text-3xl md:text-4xl font-bold text-primary">
+          <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
             Latest on Tokenizer
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-20 mt-6 md:mt-12">
