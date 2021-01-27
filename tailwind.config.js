@@ -7,6 +7,7 @@ module.exports = {
       secondary: '#E5E5E5',
       danger: '#e3342f',
       footer: '#333333',
+      menu: '#F9F9F9',
       button: {
         primary: '#2F80ED',
       },

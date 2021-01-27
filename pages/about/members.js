@@ -167,7 +167,7 @@ export default function MembersPage() {
         <div className="flex flex-col justify-center bg-white container py-10 mt-32">
           <h3 className="text-3xl md:text-4xl font-bold text-primary">TEAM</h3>
           <hr className="border-secondary border-t-4 my-8" />
-          <div className="leaders grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
+          <div className="leaders grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 gap-y-8">
             {members.map(({ photoSrc, firstName, lastName, role }, index) => (
               <TeamMember
                 key={index}
