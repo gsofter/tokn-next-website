@@ -4,7 +4,7 @@ module.exports = {
     backgroundColor: (theme) => ({
       ...theme('colors'),
       primary: '#F2F2F2',
-      secondary: '#E5E5E5',
+      secondary: '#F9F9F9',
       danger: '#e3342f',
       footer: '#333333',
       menu: '#F9F9F9',
@@ -31,6 +31,7 @@ module.exports = {
         'home-2': "url('/images/bg_home2.png')",
         'home-3': "url('/images/bg_home3.png')",
         'ourteam-1': "url('/images/bg_ourteam1.png')",
+        'solutions-1': "url('/images/bg_solutions1.png')",
       }),
       padding: {
         px160: '160px',
@@ -53,6 +54,7 @@ module.exports = {
       boxShadow: {
         primary: '4px 4px 4px rgba(0, 0, 0, 0.17)',
         card: '6px 8px 4px rgba(47, 128, 237, 0.21)',
+        'card-1': '11px 12px 14px -5px rgba(14, 113, 251, 0.14)',
       },
       minHeight: {
         70: '70px',

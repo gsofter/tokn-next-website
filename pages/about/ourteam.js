@@ -33,7 +33,7 @@ export default function OurTeamPage() {
       <div className="flex flex-col items-center justify-center bg-white px-6 py-10 md:py-40">
         <div className="flex flex-col items-center justify-center container container lg:max-w-4xl">
           <div className="flex flex-col items-center justify-center rounded-xl md:rounded-card border border-solid border-primary px-8 py-12 shadow-card bg-secondary">
-            <h3 className="text-primary text-3xl md:text-4xl font-medium">
+            <h3 className="text-primary text-3xl md:text-4xl font-bold">
               Our Team
             </h3>
             <p className="text-center text-base mt-4 md:mt-10">

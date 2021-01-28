@@ -8,4 +8,8 @@
   .btn-primary {
     @apply rounded-full py-4 px-12 bg-button-primary text-white shadow-primary;
   }
+
+  .section-title {
+    @apply text-primary text-3xl md:text-4xl font-bold;
+  }
 }
