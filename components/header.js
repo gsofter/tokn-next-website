@@ -13,7 +13,7 @@ const routes = [
     sub: [
       {
         title: 'Our Team',
-        route: '/about/members',
+        route: '/about/ourteam',
       },
       {
         title: 'Latest Listing',

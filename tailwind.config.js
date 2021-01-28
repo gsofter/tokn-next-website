@@ -16,6 +16,7 @@ module.exports = {
       ...theme('colors'),
       primary: '#2F80ED',
       secondary: '#828282',
+      card: '#4F4F4F',
       danger: '#e3342f',
       footer: '#333333',
     }),
@@ -29,6 +30,7 @@ module.exports = {
         'home-1': "url('/images/bg_home1.png')",
         'home-2': "url('/images/bg_home2.png')",
         'home-3': "url('/images/bg_home3.png')",
+        'ourteam-1': "url('/images/bg_ourteam1.png')",
       }),
       padding: {
         px160: '160px',
@@ -50,9 +52,13 @@ module.exports = {
       },
       boxShadow: {
         primary: '4px 4px 4px rgba(0, 0, 0, 0.17)',
+        card: '6px 8px 4px rgba(47, 128, 237, 0.21)',
       },
       minHeight: {
         70: '70px',
+      },
+      borderRadius: {
+        card: '70px',
       },
     },
   },
