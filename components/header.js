@@ -43,7 +43,8 @@ const routes = [
       },
       {
         title: 'Launchpad',
-        route: '#',
+        route: 'https://listing.tokenizer.cc/',
+        blank: true,
       },
       {
         title: 'DEX',

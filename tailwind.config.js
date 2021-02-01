@@ -32,6 +32,8 @@ module.exports = {
         'home-3': "url('/images/bg_home3.png')",
         'ourteam-1': "url('/images/bg_ourteam1.png')",
         'solutions-1': "url('/images/bg_solutions1.png')",
+        'solutions-2': "url('/images/bg_solutions2.png')",
+        'solutions-3': "url('/images/bg_solutions3.png')",
       }),
       padding: {
         px160: '160px',
@@ -58,6 +60,10 @@ module.exports = {
       },
       minHeight: {
         70: '70px',
+        500: '500px',
+      },
+      height: {
+        500: '500px',
       },
       borderRadius: {
         card: '70px',
