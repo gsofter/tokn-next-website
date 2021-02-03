@@ -55,7 +55,7 @@ export default function OurNetworkPage() {
           </div>
         </div>
 
-        <div className="w-full container">
+        <div className="w-full container" id="liquidity-partners">
           <h3 className="section-title border-b-4 border-secondary pb-8">
             Liquidity Partners
           </h3>
@@ -77,7 +77,10 @@ export default function OurNetworkPage() {
         </div>
       </div>
       {/* Begin new section; Industry Recognition */}
-      <div className="flex flex-col items-center justify-center bg-secondary px-6 py-10 md:py-20">
+      <div
+        className="flex flex-col items-center justify-center bg-secondary px-6 py-10 md:py-20"
+        id="industry"
+      >
         <div className="flex flex-col items-center justify-center text-secondary container px-0 md:px-20">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
             Industry Recognition

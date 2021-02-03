@@ -93,7 +93,10 @@ export default function OurTeamPage() {
       </div>
 
       {/* Begin new section; Service and Business Partners */}
-      <div className="flex flex-col items-center justify-center bg-white py-10 md:py-20">
+      <div
+        className="flex flex-col items-center justify-center bg-white py-10 md:py-20"
+        id="service-partners"
+      >
         <div className="flex flex-col items-center justify-center text-secondary container">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
             Service and Business Partners

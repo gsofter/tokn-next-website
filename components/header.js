@@ -13,23 +13,23 @@ const routes = [
     sub: [
       {
         title: 'Our Team',
-        route: '/about/ourteam',
+        route: '/about',
       },
       {
         title: 'Latest Listing',
-        route: '/about/ourteam#latest-listing',
+        route: '/about#latest-listing',
       },
       {
         title: 'Service & Business Partnerships',
-        route: '/about/members',
+        route: '/about/ournetwork',
       },
       {
         title: 'Liquidity Partners',
-        route: '/about/members',
+        route: '/about/ournetwork#liquidity-partners',
       },
       {
         title: 'Industry Recognitions',
-        route: '/about/members',
+        route: '/about/ournetwork#industry',
       },
     ],
   },
