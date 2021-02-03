@@ -22,7 +22,11 @@
 
 @layer components {
   .btn-primary {
-    @apply rounded-full py-4 px-12 bg-button-primary text-white shadow-primary;
+    @apply rounded-full py-4 px-12 bg-button-primary hover:bg-button-hover text-white text-center shadow-primary;
+  }
+
+  .btn-secondary {
+    @apply rounded-full py-4 px-12 bg-white hover:bg-gray-100 text-primary text-center shadow-primary;
   }
 
   .section-title {
@@ -35,5 +39,20 @@
 
   .section-1 {
     @apply flex flex-col items-center justify-center bg-white px-6 py-10 md:py-20;
+  }
+
+  .section-2 {
+    @apply flex flex-col items-center justify-center bg-white px-6 py-10 md:py-40;
+  }
+
+  .partner-card {
+    width: 250px;
+    height: 250px;
+    @apply bg-primary shadow-box rounded-full flex flex-col items-center justify-center;
+  }
+
+  .partner-card img {
+    width: 120px;
+    height: 120px;
   }
 }

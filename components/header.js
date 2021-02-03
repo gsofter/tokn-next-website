@@ -17,7 +17,7 @@ const routes = [
       },
       {
         title: 'Latest Listing',
-        route: '/about/members',
+        route: '/about/ourteam#latest-listing',
       },
       {
         title: 'Service & Business Partnerships',
@@ -39,16 +39,16 @@ const routes = [
     sub: [
       {
         title: 'Issuer',
-        route: '/solutions/issuer',
+        route: '/solutions#section-issuer',
       },
       {
         title: 'Launchpad',
-        route: 'https://listing.tokenizer.cc/',
+        route: '/solutions#section-launchpad',
         blank: true,
       },
       {
         title: 'DEX',
-        route: '#',
+        route: '/solutions#section-exchange',
       },
     ],
   },

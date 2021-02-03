@@ -7,7 +7,7 @@ export default function SolutionsIssuerPage() {
           <h3 className="text-3xl md:text-4xl font-bold text-center">
             Power of Tokenization
           </h3>
-          <p className="text-center text-base mt-4 md:mt-10">
+          <p className="text-center text-base text-white mt-4 md:mt-10">
             Accelerating access to opportunity, tokenization of assets refers to
             the process of issuing a security token that digitally represents a
             real tradable asset. Leveraging new blockchain technology to
@@ -312,12 +312,12 @@ export default function SolutionsIssuerPage() {
           </ul>
         </div>
       </div>
-      {/* TO Issuers */}
+      {/* To LaunchPad */}
       <div className="flex flex-col items-center justify-center bg-white py-10 md:py-40 w-full">
         <h3 className="section-title">
           Access our Applications with a single click
         </h3>
-        <div className="flex flex-col container mt-20">
+        <div className="flex flex-col container mt-20" id="section-issuer">
           <div className="card-1 bg-secondary">
             <div className="flex flex-row justify-start items-center">
               <div className="w-full flex flex-col justify-between lg:w-1/3 px-4 py-8">
@@ -343,7 +343,7 @@ export default function SolutionsIssuerPage() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col container mt-20">
+        <div className="flex flex-col container mt-20" id="section-launchpad">
           <div className="card-1 bg-secondary">
             <div className="flex flex-row justify-start items-center">
               <div className="w-full flex flex-col justify-between lg:w-1/3 px-4 py-8">
@@ -371,7 +371,7 @@ export default function SolutionsIssuerPage() {
           </div>
         </div>
 
-        <div className="flex flex-col container mt-20">
+        <div className="flex flex-col container mt-20" id="section-exchange">
           <div className="card-1 bg-secondary">
             <div className="flex flex-row justify-start items-center">
               <div className="w-full flex flex-col justify-between lg:w-1/3 px-4 py-8">

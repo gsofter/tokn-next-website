@@ -10,6 +10,7 @@ module.exports = {
       menu: '#F9F9F9',
       button: {
         primary: '#2F80ED',
+        hover: '#2769c1',
       },
     }),
     textColor: (theme) => ({
@@ -57,6 +58,7 @@ module.exports = {
         primary: '4px 4px 4px rgba(0, 0, 0, 0.17)',
         card: '6px 8px 4px rgba(47, 128, 237, 0.21)',
         'card-1': '11px 12px 14px -5px rgba(14, 113, 251, 0.14)',
+        box: 'inset 0px 4px 4px #BDBDBD;',
       },
       minHeight: {
         70: '70px',
