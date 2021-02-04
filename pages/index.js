@@ -59,7 +59,7 @@ export default function IndexPage() {
           <h3 className="text-3xl md:text-4xl font-bold text-white text-center">
             Why Tokenize?
           </h3>
-          <p className="text-center text-base mt-4 md:mt-8">
+          <p className="text-center text-base text-white mt-4 md:mt-8">
             Our proprietary suite of services automates every step from issuance
             and fundraising to investor management and annual audits. We take
             pride in framing simple, self-serviced solutions to address complex,
