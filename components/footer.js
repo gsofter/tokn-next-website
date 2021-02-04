@@ -139,7 +139,7 @@ export default function Footer() {
               digital securities or digital assets on behalf of any of its
               customers or users of our website services.
             </p>
-            <a className="mt-6" href="/">
+            <a className="mt-6" href="/privacypolicy">
               READ MORE
             </a>
           </div>
