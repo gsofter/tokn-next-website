@@ -12,7 +12,7 @@ export default function IndexPage() {
           <h5 className="text-xl italic font-medium mt-4">
             Our New Venue linking Capital to Investment Projects
           </h5>
-          <p className="text-center text-base mt-4 md:mt-10">
+          <p className="text-center text-base text-white mt-4 md:mt-10">
             At Tokenizer, we’re harnessing the power of blockchain to design and
             build an end-to-end decentralized finance and banking ecosystem. We
             aim to innovative, build efficiencies and advance capital creation
@@ -20,9 +20,12 @@ export default function IndexPage() {
             high-quality investment opportunities via tokenized listings and a
             robust marketplace
           </p>
-          <button className="btn-primary font-medium text-white text-xl mt-4 md:mt-12 w-full md:w-auto">
+          <a
+            href="/contactus"
+            className="btn-primary font-medium text-white text-xl mt-4 md:mt-12 w-full md:w-auto"
+          >
             Request Demo
-          </button>
+          </a>
         </div>
       </div>
 
@@ -41,9 +44,12 @@ export default function IndexPage() {
             clients with the most efficient and scalable solutions for both
             retail and institutional offerings.
           </p>
-          <button className="btn-primary font-medium text-white text-xl w-full md:w-auto mt-6 md:mt-12">
+          <a
+            href="/about"
+            className="btn-primary font-medium text-white text-xl w-full md:w-auto mt-6 md:mt-12"
+          >
             Learn more About Us
-          </button>
+          </a>
         </div>
       </div>
 
@@ -59,9 +65,12 @@ export default function IndexPage() {
             pride in framing simple, self-serviced solutions to address complex,
             composite problems.
           </p>
-          <button className="btn-primary font-medium text-white text-xl w-full md:w-auto mt-4 md:mt-8">
+          <a
+            href="/solutions"
+            className="btn-primary font-medium text-white text-xl w-full md:w-auto mt-4 md:mt-8"
+          >
             Access our Solutions
-          </button>
+          </a>
         </div>
       </div>
 
@@ -145,9 +154,12 @@ export default function IndexPage() {
               blogLink="https://tokenizer.cc"
             />
           </div>
-          <button className="btn-primary font-medium text-xl mt-6 md:mt-12 w-full md:w-80">
+          <a
+            href="/blog"
+            className="btn-primary font-medium text-xl mt-6 md:mt-12 w-full md:w-80"
+          >
             Discover More
-          </button>
+          </a>
         </div>
       </div>
       {/* Begin new section; Request our Whitepaper */}
@@ -156,7 +168,7 @@ export default function IndexPage() {
           <h3 className="text-3xl md:text-4xl font-bold text-white text-center">
             Request our Whitepaper
           </h3>
-          <p className="text-center text-xl mt-4 md:mt-6">
+          <p className="text-center text-base text-white mt-4 md:mt-6">
             Learn more about what we do and how we do it
           </p>
           <div className="container w-full lg:w-8/12 text-center mt-4 md:mt-12">
@@ -170,7 +182,7 @@ export default function IndexPage() {
                 placeholder="Enter your email"
               />
               <button
-                className="btn-primary text-primary bg-white text-xl mt-4 md:mt-10 w-full md:w-80 px-8"
+                className="btn-secondary text-xl mt-4 md:mt-10 w-full md:w-80 px-8"
                 type="submit"
               >
                 Submit
