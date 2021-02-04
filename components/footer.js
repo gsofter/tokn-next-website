@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="w-full grid grid-flow-row sm:grid-flow-col grid-rows-5 gap-x-4 gap-y-2">
               {/* <div className="flex flex-col justify-start"> */}
               <p className="font-bold text-base text-secondary"> Company </p>
-              <a href="/" className="text-secondary text-base">
+              <a href="/about" className="text-secondary text-base">
                 About Us
               </a>
               <a href="/" className="text-secondary text-base">
@@ -34,34 +34,47 @@ export default function Footer() {
               <a href="/" className="text-secondary text-base">
                 Careers
               </a>
-              <a href="/" className="text-secondary text-base">
+              <a href="/contactus" className="text-secondary text-base">
                 Contact Us
               </a>
               {/* </div>
               <div className="flex flex-col justify-start"> */}
               <p className="font-bold text-base text-secondary">Solutions </p>
-              <a href="/" className="text-secondary text-base">
+              <a
+                href="/solutions#section-issuer"
+                className="text-secondary text-base"
+              >
                 Issuer
               </a>
-              <a href="/" className="text-secondary text-base">
+              <a
+                href="/solutions#section-launchpad"
+                className="text-secondary text-base"
+              >
                 Launchpad
               </a>
-              <a href="/" className="text-secondary text-base">
+              <a
+                href="/solutions#section-exchange"
+                className="text-secondary text-base"
+              >
                 Exchange
               </a>
-              <a href="/" className="text-secondary text-base">
+              <a
+                href="https://hub.tokenizer.cc"
+                className="text-secondary text-base"
+                target="__blank"
+              >
                 Defi Hub
               </a>
               {/* </div>
               <div className="flex flex-col justify-start"> */}
               <p className="font-bold text-base text-secondary">Information</p>
-              <a href="/" className="text-secondary text-base">
+              <a href="/resources/faq" className="text-secondary text-base">
                 FAQ
               </a>
-              <a href="/" className="text-secondary text-base">
+              <a href="/privacypolicy" className="text-secondary text-base">
                 Terms
               </a>
-              <a href="/" className="text-secondary text-base">
+              <a href="/privacypolicy" className="text-secondary text-base">
                 Privacy
               </a>
               <a href="/" className="text-secondary text-base">
