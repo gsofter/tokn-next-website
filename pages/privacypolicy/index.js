@@ -6,7 +6,7 @@ export default function PrivacyPolicyPage() {
           <h3 className="section-title border-b-4 border-secondary pb-8">
             Privacy Policy
           </h3>
-          <p className="leading-7 tracking-wider">
+          <p className="leading-7 tracking-wider mt-10">
             <b> Scope and Consent </b> <br />
             When you use TOKENIZER services, you are contracting with DeFi
             Ventures Inc. By using TOKENIZER services, you expressly consent to
