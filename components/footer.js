@@ -7,8 +7,6 @@ import {
   FaTwitter,
 } from 'react-icons/fa';
 
-import { AiFillTwitterCircle } from 'react-icons/ai';
-
 export default function Footer() {
   return (
     <footer className="flex flex-col">

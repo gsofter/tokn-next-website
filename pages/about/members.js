@@ -3,6 +3,7 @@ import TeamMember from '../../components/TeamMember';
 const leaders = [
   {
     photoSrc: `${__dirname}images/members/leaders/manindra_ma_jumar.png`,
+    modalPhotoSrc: `${__dirname}images/members/leaders/manindra_ma_jumar_d.png`,
     firstName: 'manindra',
     lastName: 'majumdar',
     role: 'Chief Executive Officer',
@@ -11,6 +12,7 @@ const leaders = [
   },
   {
     photoSrc: `${__dirname}images/members/leaders/mark_kuper.png`,
+    modalPhotoSrc: `${__dirname}images/members/leaders/mark_kuper_d.png`,
     firstName: 'marc',
     lastName: 'kuper',
     role: 'Chief Operation Officer',
@@ -19,6 +21,7 @@ const leaders = [
   },
   {
     photoSrc: `${__dirname}images/members/leaders/fernando_gamonal.png`,
+    modalPhotoSrc: `${__dirname}images/members/leaders/fernando_gamonal_d.png`,
     firstName: 'fernando',
     lastName: 'gamonal',
     role: 'Chief Business Officer',
@@ -27,6 +30,7 @@ const leaders = [
   },
   {
     photoSrc: `${__dirname}images/members/leaders/stephan_ashworth.png`,
+    modalPhotoSrc: `${__dirname}images/members/leaders/stephan_ashworth_d.png`,
     firstName: 'stephan',
     lastName: 'ashworth',
     role: 'Chief Product Officer',
@@ -35,6 +39,7 @@ const leaders = [
   },
   {
     photoSrc: `${__dirname}images/members/leaders/partha_mitra.png`,
+    modalPhotoSrc: `${__dirname}images/members/leaders/partha_mitra_d.png`,
     firstName: 'partha',
     lastName: 'mitra',
     role: 'Chief Technology Officer',
@@ -43,6 +48,7 @@ const leaders = [
   },
   {
     photoSrc: `${__dirname}images/members/leaders/jemima_spiteri.png`,
+    modalPhotoSrc: `${__dirname}images/members/leaders/jemima_spiteri_d.png`,
     firstName: 'jemima',
     lastName: 'spiteri',
     role: 'Director of People & Culture',
@@ -289,15 +295,29 @@ export default function MembersPage() {
           </h3>
           <hr className="border-secondary border-t-4 my-8" />
           <div className="leaders grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:gap-x-4 gap-y-4 md:gap-y-12">
-            {leaders.map(({ photoSrc, firstName, lastName, role }, index) => (
-              <LeaderMember
-                key={index}
-                photoSrc={photoSrc}
-                firstName={firstName}
-                lastName={lastName}
-                role={role}
-              />
-            ))}
+            {leaders.map(
+              (
+                {
+                  photoSrc,
+                  firstName,
+                  lastName,
+                  role,
+                  description,
+                  modalPhotoSrc,
+                },
+                index,
+              ) => (
+                <LeaderMember
+                  key={index}
+                  photoSrc={photoSrc}
+                  firstName={firstName}
+                  lastName={lastName}
+                  role={role}
+                  description={description}
+                  modalPhotoSrc={modalPhotoSrc}
+                />
+              ),
+            )}
           </div>
         </div>
         {/* Leaders Section */}
@@ -324,12 +344,15 @@ export default function MembersPage() {
           <h3 className="text-3xl md:text-4xl font-bold text-white text-center">
             Join Us
           </h3>
-          <p className="text-center text-xl mt-4 md:mt-6">
+          <p className="text-center text-xl text-white mt-4 md:mt-6">
             We’re always looking for amazing people to join our growing team
           </p>
-          <button className="btn-primary font-medium text-primary bg-white text-xl w-full md:w-auto mt-4 md:mt-16">
+          <a
+            href="#"
+            className="btn-secondary font-medium text-xl w-full md:w-auto mt-4 md:mt-16"
+          >
             Careers
-          </button>
+          </a>
         </div>
       </div>
     </>
