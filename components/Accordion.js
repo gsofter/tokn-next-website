@@ -11,7 +11,9 @@ export default function Accordion({ title, description }) {
   return (
     <div className="flex flex-col justify-center items-start py-6">
       <div className="header flex flex-row justify-between w-full">
-        <p className="text-primary font-medium text-xl"> {title} </p>
+        <p className="text-primary font-medium text-xl tracking-wider">
+          {title}
+        </p>
         <a
           onClick={handleCollapse}
           className="text-primary font-bold text-xl cursor-pointer"
@@ -21,7 +23,7 @@ export default function Accordion({ title, description }) {
       </div>
       <Transition show={isCollapsed}>
         <p
-          className="text-secondary text-base mt-8"
+          className="text-secondary text-base mt-8 tracking-wider"
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </Transition>
