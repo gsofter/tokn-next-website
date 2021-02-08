@@ -55,7 +55,7 @@ export default function OurNetworkPage() {
   return (
     <>
       <div className="section-1">
-        <div className="w-full container">
+        <div className="w-full container max-w-7xl">
           <h3 className="section-title border-b-4 border-secondary pb-8">
             Frequently Asked Questions
           </h3>

@@ -94,8 +94,8 @@ export default function Footer() {
                   placeholder="Email"
                 />
                 <button
-                  className="btn-primary text-base py-2 shadow-none h-full ml-0 mt-4 md:mt-0 md:ml-4 w-full md:w-1/4"
-                  type="submit"
+                  className="btn-primary text-base py-2 shadow-none h-full ml-0 mt-4 md:mt-0 md:ml-4 w-full md:w-1/4 outline-none focus:outline-none"
+                  // type="submit"
                 >
                   Submit
                 </button>

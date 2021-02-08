@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import { useState } from 'react';
 import cn from 'classnames';
@@ -13,7 +14,7 @@ const routes = [
     sub: [
       {
         title: 'Our Team',
-        route: '/about',
+        route: '/about/members',
       },
       {
         title: 'Latest Listing',
@@ -184,7 +185,7 @@ export default function Header() {
         </div>
       </Transition>
       <div className="flex flex-wrap items-center justify-between max-w-full px-4 py-6 mx-auto md:flex-no-wrap md:px-6">
-        <div className="flex items-center">
+        <div className="flex items-center cursor-pointer">
           <Link href="/">
             <img
               src="/images/logo.png"
@@ -258,20 +259,20 @@ export default function Header() {
                             <div className="absolute z-10 mt-3 transform px-2 w-screen max-w-max sm:px-0 lg:ml-0">
                               <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                                 <div className="relative grid gap-6 bg-menu px-5 py-6 sm:gap-8 sm:p-8">
-                                  {sub.map((item) => (
-                                    <>
+                                  {sub.map((item, index) => (
+                                    <React.Fragment key={index}>
                                       <a
                                         href={item.route}
                                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 cursor-pointer"
                                       >
-                                        <div className="ml-4">
-                                          <p className="text-base font-medium text-gray-900 hover:text-gray-900">
+                                        <div className="px-4">
+                                          <p className="text-base font-medium text-secondary hover:text-gray-900">
                                             {item.title}
                                           </p>
                                         </div>
                                       </a>
                                       <hr className="border-secondary" />
-                                    </>
+                                    </React.Fragment>
                                   ))}
                                 </div>
                               </div>

@@ -69,6 +69,7 @@ module.exports = {
       },
       borderRadius: {
         card: '70px',
+        'card-1': '50px',
       },
     },
   },

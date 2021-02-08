@@ -2,7 +2,7 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       <div className="section-1">
-        <div className="w-full container">
+        <div className="w-full container max-w-7xl">
           <h3 className="section-title border-b-4 border-secondary pb-8">
             Privacy Policy
           </h3>
@@ -36,11 +36,16 @@ export default function PrivacyPolicyPage() {
             bank account information and protect against or prevent actual or
             potential fraud or unauthorized use, and ensure compliance with
             federal, state, local rules and regulations. <br />
-            a. You may browse our website and mobile applications without
-            telling uswho you are or revealing any personal information about
-            yourself. <br />
-            b. You may also uploadphotographs for your User account/profile.{' '}
-            <br />
+            <ul className="list-decimal">
+              <li>
+                You may browse our website and mobile applications without
+                telling uswho you are or revealing any personal information
+                about yourself.
+              </li>
+              <li>
+                You may also uploadphotographs for your User account/profile.
+              </li>
+            </ul>
             <b> B) Information to Respond to Your Requests: </b> You may provide
             us your personal information so we can send you newsletters and
             other communications. Details of how you can opt-out of receiving
@@ -350,7 +355,7 @@ export default function PrivacyPolicyPage() {
             safeguards we use are firewalls, data encryption, physical access
             controls to our data centers and information access authorization
             controls. It is your responsibility to make sure that your personal
-             information is accurate and that your password(s) and
+            information is accurate and that your password(s) and
             account/profile registration information are secure and not shared
             with third parties. <br />
             <b> P) Children'sPrivacy: </b> The Platform is a general audience

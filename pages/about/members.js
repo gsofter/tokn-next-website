@@ -120,12 +120,6 @@ const members = [
     photoSrc: `${__dirname}images/members/members/sam_mokhtari.png`,
   },
   {
-    firstName: 'sean',
-    lastName: 'malatesta',
-    role: 'Director of Business <br /> development',
-    photoSrc: `${__dirname}images/members/members/sean_malatesta.png`,
-  },
-  {
     firstName: 'zafer',
     lastName: 'egri',
     role: 'Director of Business <br /> development',
@@ -184,12 +178,6 @@ const members = [
     lastName: 'ionut',
     role: 'Full Stack Developer',
     photoSrc: `${__dirname}images/members/members/adelin_ionut.png`,
-  },
-  {
-    firstName: 'akira',
-    lastName: 'ito',
-    role: 'Full Stack Developer',
-    photoSrc: `${__dirname}images/members/members/akira_ito.png`,
   },
   {
     firstName: 'benjamin',

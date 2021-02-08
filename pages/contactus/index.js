@@ -2,7 +2,7 @@ export default function ContactUsPage() {
   return (
     <>
       <div className="section-1">
-        <div className="w-full container">
+        <div className="w-full container max-w-7xl">
           <h3 className="section-title border-b-4 border-secondary pb-8">
             Contact Us
           </h3>
@@ -10,45 +10,51 @@ export default function ContactUsPage() {
             <div className="w-full flex flex-wrap justify-center items-center mt-8">
               <div className="w-full md:w-1/3 px-2">
                 <input
-                  className="bg-primary w-full "
+                  className="bg-primary w-full h-16"
                   placeholder="First name*"
                 />
               </div>
               <div className="w-full md:w-2/3 px-2">
                 <input
-                  className="bg-primary w-full "
+                  className="bg-primary w-full h-16"
                   placeholder="Last name*"
                 />
               </div>
             </div>
             <div className="w-full flex flex-wrap justify-center items-center mt-8">
               <div className="w-full md:w-1/2 px-2">
-                <input className="bg-primary w-full " placeholder="Email*" />
+                <input
+                  className="bg-primary w-full h-16"
+                  placeholder="Email*"
+                />
               </div>
               <div className="w-full md:w-1/2 px-2">
                 <input
-                  className="bg-primary w-full "
+                  className="bg-primary w-full h-16"
                   placeholder="Company Name*"
                 />
               </div>
             </div>
             <div className="w-full flex flex-wrap justify-center items-center mt-8">
-              <div className="w-full md:w-1/2 px-2 pl-0">
+              <div className="w-full md:w-1/2 px-2">
                 <input
-                  className="bg-primary w-full"
+                  className="bg-primary w-full h-16"
                   placeholder="Phone number"
                 />
               </div>
-              <div className="w-full md:w-1/2 px-2 pl-0">
+              <div className="w-full md:w-1/2 px-2 ">
                 <input
-                  className="bg-primary w-full "
+                  className="bg-primary w-full h-16"
                   placeholder="Country / Region"
                 />
               </div>
             </div>
             <div className="w-full flex flex-wrap justify-center items-center mt-8">
               <div className="w-full px-2">
-                <textarea className="w-full" placeholder="message" />
+                <textarea
+                  className="w-full h-80 rounded-card-1 bg-secondary"
+                  placeholder="message"
+                />
               </div>
             </div>
             <div className="w-full inline-flex justify-center items-center p-4">
@@ -67,14 +73,14 @@ export default function ContactUsPage() {
                 value="term"
                 className="w-5 h-5"
               ></input>
-              <label for="term" className="ml-3">
+              <label htmlFor="term" className="ml-3">
                 I agree to receive other communications from Tokenizer.*
               </label>
             </div>
             <div className="w-full inline-flex justify-center items-center p-4 pl-0">
               <button
                 type="submit"
-                className="shadow-primary font-medium px-16 py-3"
+                className="btn-primary font-medium px-16 py-3 outline-none"
               >
                 Submit
               </button>

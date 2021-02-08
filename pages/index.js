@@ -80,7 +80,7 @@ export default function IndexPage() {
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
             Media Coverage
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 justify-center items-center mt-4 md:mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 justify-center items-center mt-4 md:mt-20">
             <div className="flex items-center justify-center text-center">
               <img alt="COINTELEGRAPH" src="/images/m1.png" />
             </div>
@@ -111,7 +111,7 @@ export default function IndexPage() {
       </div>
 
       {/* Begin new section; Industry Recognition */}
-      <div className="flex flex-col items-center justify-center bg-secondary px-6 py-10 md:py-20">
+      {/* <div className="flex flex-col items-center justify-center bg-secondary px-6 py-10 md:py-20">
         <div className="flex flex-col items-center justify-center text-secondary container px-0 md:px-20">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
             Industry Recognition
@@ -127,9 +127,10 @@ export default function IndexPage() {
             - Andy Strott, Resolute U.S. Real Estate Fund I
           </p>
         </div>
-      </div>
+      </div> */}
+
       {/* Begin new section; Latest on Tokenizer */}
-      <div className="flex flex-col items-center justify-center bg-white py-10 md:py-32 px-6">
+      <div className="flex flex-col items-center justify-center bg-secondary py-10 md:py-32 px-6">
         <div className="flex flex-col items-center justify-center text-secondary container">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
             Latest on Tokenizer
