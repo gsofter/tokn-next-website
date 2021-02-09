@@ -63,4 +63,12 @@
     width: 120px;
     height: 120px;
   }
+
+  .dropdown .dropdown-content {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }

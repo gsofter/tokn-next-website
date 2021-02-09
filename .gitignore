@@ -27,18 +27,6 @@ yarn-error.log*
 # Local Netlify folder
 .netlify
 
-# local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# vercel
-.vercel
-
-# serverless
-.serverless
-.serverless_nextjs
-
-# Intellij
-.idea
+#serverless
+/.serverless/
+/.serverless_nextjs/
