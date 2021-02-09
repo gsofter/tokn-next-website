@@ -101,7 +101,7 @@ export default function Header() {
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src={`${__dirname}images/logo.png`}
+                    src="/images/logo.png"
                     alt="Tokenizer"
                     style={{ width: '30px', height: 'auto' }}
                   />
@@ -190,7 +190,7 @@ export default function Header() {
             <img
               src="/images/logo.png"
               alt="Tokenizer logo"
-              className="w-3/4"
+              className="h-8 md:h-auto md:w-3/4"
             />
           </Link>
         </div>
@@ -216,7 +216,7 @@ export default function Header() {
           )}
         >
           {routes.map(({ route, title, className, blank, sub }) => (
-            <li className="mt-3 md:mt-0 md:ml-6 lg:px-5 md:px-2" key={title}>
+            <li className="mt-3 md:mt-0 md:ml-6" key={title}>
               {sub === undefined ? (
                 <Link href={route}>
                   <a
@@ -234,53 +234,35 @@ export default function Header() {
                 </Link>
               ) : (
                 <nav className="hidden md:flex space-x-10">
-                  <div className="relative">
-                    <Menu>
-                      {({ open }) => (
-                        <>
-                          <Menu.Button as="div">
-                            <a
-                              href="#"
-                              className="block font-medium text-secondary hover:text-gray-900"
-                              target={blank ? '_blank' : ''}
-                            >
-                              {title}
-                            </a>
-                          </Menu.Button>
-                          <Transition
-                            show={open}
-                            enter="transition ease-out duration-200"
-                            enterFrom="opacity-0 translate-y-1"
-                            enterTo="opacity-100 translate-y-0"
-                            leave="transition ease-in duration-150"
-                            leaveFrom="opacity-100 translate-y-0"
-                            leaveTo="opacity-0 translate-y-1"
-                          >
-                            <div className="absolute z-10 mt-3 transform px-2 w-screen max-w-max sm:px-0 lg:ml-0">
-                              <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                                <div className="relative grid gap-6 bg-menu px-5 py-6 sm:gap-8 sm:p-8">
-                                  {sub.map((item, index) => (
-                                    <React.Fragment key={index}>
-                                      <a
-                                        href={item.route}
-                                        className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 cursor-pointer"
-                                      >
-                                        <div className="px-4">
-                                          <p className="text-base font-medium text-secondary hover:text-gray-900">
-                                            {item.title}
-                                          </p>
-                                        </div>
-                                      </a>
-                                      <hr className="border-secondary" />
-                                    </React.Fragment>
-                                  ))}
+                  <div className="relative dropdown">
+                    <a
+                      href={route}
+                      className="block font-medium text-secondary hover:text-gray-900 px-5 py-2"
+                      target={blank ? '_blank' : ''}
+                    >
+                      {title}
+                    </a>
+                    <div className="dropdown-content transition duration-500 ease-in-out absolute z-10 transform px-2 w-screen max-w-max sm:px-0 lg:ml-0">
+                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                        <div className="relative grid gap-6 bg-menu px-5 py-6 sm:gap-8 sm:p-8">
+                          {sub.map((item, index) => (
+                            <React.Fragment key={index}>
+                              <a
+                                href={item.route}
+                                className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 cursor-pointer"
+                              >
+                                <div className="px-4">
+                                  <p className="text-base font-medium text-secondary hover:text-gray-900">
+                                    {item.title}
+                                  </p>
                                 </div>
-                              </div>
-                            </div>
-                          </Transition>
-                        </>
-                      )}
-                    </Menu>
+                              </a>
+                              <hr className="border-secondary" />
+                            </React.Fragment>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </nav>
               )}
