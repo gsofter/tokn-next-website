@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-# serverless.yml
-
-myNextApplication:
-  component: "@sls-next/serverless-component"
-=======
 # name of your application
 myNextApplication:
   component: '@sls-next/serverless-component'
->>>>>>> a763463e2062ed1dda8a1aac61ed311f3eeb61f8
