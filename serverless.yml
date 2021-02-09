@@ -1,4 +1,4 @@
 # serverless.yml
 
-tokenizerLandingPage:
+myNextApplication:
   component: "@sls-next/serverless-component"
