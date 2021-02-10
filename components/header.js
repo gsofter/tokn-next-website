@@ -221,11 +221,14 @@ export default function Header() {
                 <Link href={route}>
                   <a
                     className={cn(
-                      'block font-medium hover:text-gray-900',
+                      'block font-medium',
                       {
                         [`${className} text-white`]: className !== undefined,
                       },
-                      { 'text-secondary': className === undefined },
+                      {
+                        'text-secondary  hover:text-gray-900':
+                          className === undefined,
+                      },
                     )}
                     target={blank ? '_blank' : ''}
                   >

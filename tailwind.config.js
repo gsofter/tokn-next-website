@@ -71,6 +71,9 @@ module.exports = {
         card: '70px',
         'card-1': '50px',
       },
+      listStyleType: {
+        alpha: 'lower-alpha',
+      },
     },
   },
 };

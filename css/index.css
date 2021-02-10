@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply tracking-wider;
+  }
+
   input {
     @apply rounded-full border border-primary text-base border-solid py-2 px-8;
   }

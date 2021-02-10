@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
             bank account information and protect against or prevent actual or
             potential fraud or unauthorized use, and ensure compliance with
             federal, state, local rules and regulations. <br />
-            <ul className="list-decimal">
+            <ul className="list-alpha list-inside ml-4">
               <li>
                 You may browse our website and mobile applications without
                 telling uswho you are or revealing any personal information
@@ -102,45 +102,77 @@ export default function PrivacyPolicyPage() {
             device tokens,deterministic finger-printing technologies,
             probabilistic finger-printing technologies,device graph, unique
             device identifier, and unique identifier header to collect usage
-            information and we also collect your IP address. a. We may use
-            tracking technologies for a variety of purposes, including: a.
-            Operationally Necessary. We may use tracking technologies required
-            for system administration, to prevent fraudulent activity, improve
-            security, or provide for essential business intelligence for
-            purposes of enhancing your experience or develop and/or source
-            additional products and services for you. We are not a. required to
-            obtain your consent to tracking technologies that are operationally
-            necessary. b. Performance-Related. We may use cookies or other
-            tracking technologies to assess the performance of the online
-            services, including as part of our analytic practices to improve the
-            content offered through the online services c.
-            Functionality-Related. We may use tracking technologies to tell us,
-            for example, whether you have visited the website before or if you
-            are anew visitor and to a. help us identify the features in which
-            you may have the greatest interest. d. Targeting-Related. We may use
-            tracking technologies to deliver content, including ads, relevant to
-            your interests on our online service and third-party sites a. based
-            on how you interact with our advertisements or content as well as
-            track the content you access (including video viewing). b. The use
-            of such tracking technologies and data has been further described
-            and set forth in Section 3 below. c. We may also collect password
-            information from you when you log in, as well as computer and/or
-            connection information. During some visits we may use software tools
-            to measure and collect session information, including page response
-            times, download errors, time spent on certain pages and page
-            interaction information c. Advanced Analytics / Artificial
-            Intelligence / Machine Learning: We may use advanced analytics
-            software and tools –proprietary and third party vendor-based for
-            analysis purposes and/or as required for system administration, to
-            prevent fraudulent activity, improve security, or provide for
-            essential business intelligence for purposes of enhancing your
-            experience, develop and/or source additional products and services
-            for you, or to provide feedback and analysis to related parties,
-            such as government/regulatory authorities, our partner banks, or
-            clients. e. Our goal is to collect and use only that information
-            that we think is required for our legitimate business interests, in
-            order to authenticate and verify your identity, and to improve your
-            experience of using TOKENIZER services. <br />
+            information and we also collect your IP address.
+            <ul className="list-alpha list-outside ml-8">
+              <li>
+                We may use tracking technologies for a variety of purposes,
+                including:
+                <ul className="list-alpha list-outside ml-8">
+                  <li>
+                    <b>Operationally Necessary.</b> We may use tracking
+                    technologies required for system administration, to prevent
+                    fraudulent activity, improve security, or provide for
+                    essential business intelligence for purposes of enhancing
+                    your experience or develop and/or source additional products
+                    and services for you. We are not a. required to obtain your
+                    consent to tracking technologies that are operationally
+                    necessary.{' '}
+                  </li>
+
+                  <li>
+                    <b>Performance-Related.</b> We may use cookies or other
+                    tracking technologies to assess the performance of the
+                    online services, including as part of our analytic practices
+                    to improve the content offered through the online services
+                  </li>
+                  <li>
+                    <b>Functionality-Related.</b> We may use tracking
+                    technologies to tell us, for example, whether you have
+                    visited the website before or if you are anew visitor and to
+                    a. help us identify the features in which you may have the
+                    greatest interest.
+                  </li>
+                  <li>
+                    <b>Targeting-Related.</b> We may use tracking technologies
+                    to deliver content, including ads, relevant to your
+                    interests on our online service and third-party sites a.
+                    based on how you interact with our advertisements or content
+                    as well as track the content you access (including video
+                    viewing).
+                  </li>
+                </ul>
+              </li>
+              <li>
+                The use of such tracking technologies and data has been further
+                described and set forth in Section 3 below.{' '}
+              </li>{' '}
+              <li>
+                We may also collect password information from you when you log
+                in, as well as computer and/or connection information. During
+                some visits we may use software tools to measure and collect
+                session information, including page response times, download
+                errors, time spent on certain pages and page interaction
+                information{' '}
+              </li>{' '}
+              <li>
+                Advanced Analytics / Artificial Intelligence / Machine Learning:
+                We may use advanced analytics software and tools –proprietary
+                and third party vendor-based for analysis purposes and/or as
+                required for system administration, to prevent fraudulent
+                activity, improve security, or provide for essential business
+                intelligence for purposes of enhancing your experience, develop
+                and/or source additional products and services for you, or to
+                provide feedback and analysis to related parties, such as
+                government/regulatory authorities, our partner banks, or
+                clients.{' '}
+              </li>
+              <li>
+                Our goal is to collect and use only that information that we
+                think is required for our legitimate business interests, in
+                order to authenticate and verify your identity, and to improve
+                your experience of using TOKENIZER services. <br />
+              </li>
+            </ul>
             <b> H) Geolocation Information: </b> When you use TOKENIZERs
             ervices, we may collect geo-location information to provide certain
             location-based services that you request (e.g., maps or nearby
@@ -387,7 +419,7 @@ export default function PrivacyPolicyPage() {
         </div>
       </div>
       <div className="section-1">
-        <div className="w-full container">
+        <div className="w-full container max-w-7xl">
           <h3 className="section-title border-b-4 border-secondary pb-8">
             Disclaimers and Additional Disclosures
           </h3>

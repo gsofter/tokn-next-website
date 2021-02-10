@@ -24,7 +24,7 @@ export default function IndexPage() {
             href="/contactus"
             className="btn-primary font-medium text-white text-xl mt-4 md:mt-12 w-full md:w-auto"
           >
-            Request Demo
+            Request a demo
           </a>
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function IndexPage() {
           </p>
           <a
             href="/solutions"
-            className="btn-primary font-medium text-white text-xl w-full md:w-auto mt-4 md:mt-8"
+            className="btn-primary font-medium text-white text-xl w-full md:w-auto mt-6 md:mt-12"
           >
             Access our Solutions
           </a>

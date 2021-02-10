@@ -319,8 +319,8 @@ export default function SolutionsIssuerPage() {
         </h3>
         <div className="flex flex-col container mt-20" id="section-issuer">
           <div className="card-1 bg-secondary">
-            <div className="flex flex-row justify-start items-center">
-              <div className="w-full flex flex-col justify-between lg:w-1/3 px-4 py-8">
+            <div className="flex flex-row justify-start items-center ml-10 lg:ml-20">
+              <div className="w-full flex flex-col justify-between w-full lg:w-1/3 px-4 py-8">
                 <h3 className="section-title">Tokenize, today. </h3>
                 <p className="text-secondary text-base mt-8">
                   Benefit from our industry and product expertise and
@@ -337,7 +337,7 @@ export default function SolutionsIssuerPage() {
                   Issuer
                 </a>
               </div>
-              <div className="w-full lg:w-2/3 inline-flex items-center justify-end">
+              <div className="w-full lg:w-2/3 inline-flex items-center justify-center">
                 <img src={`${__dirname}images/d1.png`} alt="" />
               </div>
             </div>
@@ -345,8 +345,8 @@ export default function SolutionsIssuerPage() {
         </div>
         <div className="flex flex-col container mt-20" id="section-launchpad">
           <div className="card-1 bg-secondary">
-            <div className="flex flex-row justify-start items-center">
-              <div className="w-full flex flex-col justify-between lg:w-1/3 px-4 py-8">
+            <div className="flex flex-row justify-start items-center ml-10 lg:ml-20">
+              <div className="w-full flex flex-col justify-between w-full lg:w-1/3 px-4 py-8">
                 <h3 className="section-title">Discover. Engage. Invest. </h3>
                 <p className="text-secondary text-base mt-8">
                   Gain access to a global pool of high quality, pre-screened*
@@ -364,7 +364,7 @@ export default function SolutionsIssuerPage() {
                   LAUNCHPAD
                 </a>
               </div>
-              <div className="w-full lg:w-2/3 inline-flex items-center justify-end">
+              <div className="w-full lg:w-2/3 inline-flex items-center justify-center">
                 <img src={`${__dirname}images/d2.png`} alt="" />
               </div>
             </div>
@@ -373,7 +373,7 @@ export default function SolutionsIssuerPage() {
 
         <div className="flex flex-col container mt-20" id="section-exchange">
           <div className="card-1 bg-secondary">
-            <div className="flex flex-row justify-start items-center">
+            <div className="flex md:flex-col lg:flex-row justify-start items-center ml-10 lg:ml-20">
               <div className="w-full flex flex-col justify-between lg:w-1/3 px-4 py-8">
                 <h3 className="section-title">Trade. Track. Trust. </h3>
                 <p className="text-secondary text-base mt-8">
@@ -391,7 +391,7 @@ export default function SolutionsIssuerPage() {
                   EXCHANGE
                 </a>
               </div>
-              <div className="w-full lg:w-2/3 inline-flex items-center justify-end">
+              <div className="w-full lg:w-2/3 inline-flex items-center justify-center">
                 <img src={`${__dirname}images/d3.png`} alt="" />
               </div>
             </div>
