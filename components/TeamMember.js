@@ -1,4 +1,4 @@
-export default function LeaderMember({
+export default function TeamMember({
   photoSrc,
   firstName,
   lastName,
@@ -7,10 +7,10 @@ export default function LeaderMember({
   contact,
 }) {
   return (
-    <div className="flex items-center justify-center md:justify-start">
+    <div className="flex items-start justify-start md:justify-start">
       <div className="flex flex-col items-start">
         <img src={photoSrc} alt={firstName + lastName} />
-        <p className="text-primary text-xl font-semibold uppercase">
+        <p className="text-primary text-xl font-semibold uppercase mt-4">
           {firstName} <br /> {lastName}
         </p>
         <p

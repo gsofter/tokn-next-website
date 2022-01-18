@@ -4,8 +4,75 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply tracking-wider;
+  }
+
+  input {
+    @apply rounded-full border border-primary text-base border-solid py-2 px-8;
+  }
+
+  textarea {
+    @apply border border-primary text-base border-solid py-2 px-8;
+  }
+
+  p,
+  label {
+    @apply text-secondary;
+  }
+
+  input,
+  textarea {
+    @apply outline-none;
+  }
+
+  button {
+    @apply rounded-full py-4 px-12 bg-button-primary text-white focus:outline-none;
+  }
+}
+
 @layer components {
   .btn-primary {
-    @apply rounded-full py-4 px-12 bg-button-primary text-white shadow-primary;
+    @apply rounded-full py-4 px-12 bg-button-primary hover:bg-button-hover text-white text-center shadow-primary outline-none;
+  }
+
+  .btn-secondary {
+    @apply rounded-full py-4 px-12 bg-white hover:bg-gray-100 text-primary text-center shadow-primary;
+  }
+
+  .section-title {
+    @apply text-primary text-3xl md:text-4xl font-bold;
+  }
+
+  .card-1 {
+    @apply flex flex-col items-center justify-center rounded-xl md:rounded-card border border-solid border-primary px-8 py-12 shadow-card;
+  }
+
+  .section-1 {
+    @apply flex flex-col items-center justify-center bg-white px-6 py-10 md:py-20;
+  }
+
+  .section-2 {
+    @apply flex flex-col items-center justify-center bg-white px-6 py-10 md:py-40;
+  }
+
+  .partner-card {
+    width: 250px;
+    height: 250px;
+    @apply bg-primary shadow-box rounded-full flex flex-col items-center justify-center;
+  }
+
+  .partner-card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .dropdown .dropdown-content {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 }

@@ -1,54 +1,75 @@
-# Next.js Starter Tailwind
+# Tokenizer New Website
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[Demo link](https://tokn-web.herokuapp.com/)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+### How to run local development server
+```
+npm run dev
+```
 
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+### Design
+To see design, look [here](https://www.figma.com/file/AMa06q8Y1tEQ1llGmaRp8J/Tokenizer-Homepage)
+### Learn
+- [Next.js](https://nextjs.org/docs/getting-started)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-![alt text](https://github.com/taylorbryant/next-starter-tailwind/blob/master/public/screenshot.png "Screenshot of Tailwind Next.js Starter homepage")
+## Deploying to AWS Using Serverless
 
- <div align="center">
- <p><strong>A <a href="https://nextjs.org" target="_blank">Next.js</a> starter styled using <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>.</strong></p>
- <p>Uses Tailwind CSS' <a href="https://tailwindcss.com/docs/controlling-file-size" target="_blank">built-in purge option</a> to remove unused CSS.</p>
- <p>Illustrations by <a href="https://undraw.co/" target="_blank">unDraw</a>.</p>
- <p>View demo <a href="https://next-starter-tailwind.taylorbryant.dev" target="_blank">here</a>.</p>
-</div>
+Another way of deploying NextJS apps, it's as a lambda package on AWS, using [Serverless](https://www.serverless.com/) Framework,
+which is a framework that helps you in deploying Lambda functions on AWS. It's very straight forward, and without any
+difficult or additional configuration.
 
-## Deploy
+### Steps for deploying to AWS Lambda
 
-### Vercel
+#### 🔷 Part 1
+For deploying it to AWS, you just need to make sure you have a valid AWS account, and your Access and Secret keys stored in
+your computer as environment variables, you can to it by:
+```shell script
+export AWS_ACCESS_KEY_ID=<your-aws-access-key-id>
+export AWS_SECRET_ACCESS_KEY=<your-aws-secret-access-key>
+```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Ftaylorbryant%2Fnext-starter-tailwind%2Ftree%2Fmaster)
+If you don't have an Amazon account, or haven't set the AWS credentials so far, you can take a look over this guide
+[AWS - Credentials](https://www.serverless.com/framework/docs/providers/aws/guide/credentials/)
 
-## License
+#### 🔷 Part 2
 
-[MIT](https://github.com/taylorbryant/next-starter-tailwind/blob/master/LICENSE.md)
+After this, you need to [Install Serverless Framework](https://www.serverless.com/framework/docs/providers/aws/guide/installation/)
 
-## How you can help
+#### 🔷 Part 3
 
-Enjoying this starter and want to help? You can:
+Then, having Serverless framework installed on your machine, you just need to create a file named [serverless.yml](./serverless.yml)
+on the root path of your NextJS App, but be aware that this file is already created in this repo, we are just
+mentioning this in the case you want to add it to another project. So if you are using this repo, which already 
+has the [serverless.yml](./serverless.yml) file, you don't need to create one.
 
-- [Create an issue](https://github.com/taylorbryant/next-starter-tailwind/issues/new) with some constructive criticism
-- [Submit a pull request](https://github.com/taylorbryant/next-starter-tailwind/compare) with some improvements to the project
+If you have created a new one, you just need to add the following content in the file:
+```yaml
+# serverless.yml
 
-## Contributors ✨
+# name of your application
+myNextApplication:
+  component: "@sls-next/serverless-component"
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+```
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/Mozart409"><img src="https://avatars2.githubusercontent.com/u/38767929?v=4" width="100px;" alt=""/><br /><sub><b>Amadeus</b></sub></a><br /><a href="https://github.com/taylorbryant/next-starter-tailwind/commits?author=Mozart409" title="Code">💻</a> <a href="#ideas-Mozart409" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://www.synaptech.fr"><img src="https://avatars3.githubusercontent.com/u/10560326?v=4" width="100px;" alt=""/><br /><sub><b>David Eugene</b></sub></a><br /><a href="https://github.com/taylorbryant/next-starter-tailwind/commits?author=egdavid" title="Code">💻</a></td>
-  </tr>
-</table>
+You can also edit the [serverless.yml](./serverless.yml) to add a specific domain, or configure additional settings, you can take
+a look over them in this [Guide](https://www.serverless.com/blog/serverless-nextjs).
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
+#### 🔷 Part 4
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+Execute the following command in the root path of the repo, to deploy it to your AWS account:
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+```shell script
+serverless
+```
+
+#### 🔷 How does Serverless works in the background
+
+We are currently using the [@sls-next/serverless-component]() for deploying our NextJS to Lambda on AWS account.
+In the background, this component is not using CloudFormation to deploy, because it makes the deployment faster,
+and bassically what happens, is that Serverless framework will build your NextJS application, will pack it and
+save it to a new S3 bucket, a NodeJS lambda function will be created to host that packed application, and finally 
+AWS Cloudfront will create a CDN distribution pointing to your application.
+
+If you have also configured a domain, Route53 and ACM will be used to manage the DNS records and SSL certificates.

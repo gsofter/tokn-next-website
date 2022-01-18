@@ -12,7 +12,7 @@ export default function IndexPage() {
           <h5 className="text-xl italic font-medium mt-4">
             Our New Venue linking Capital to Investment Projects
           </h5>
-          <p className="text-center text-base mt-4 md:mt-10">
+          <p className="text-center text-base text-white mt-4 md:mt-10">
             At Tokenizer, we’re harnessing the power of blockchain to design and
             build an end-to-end decentralized finance and banking ecosystem. We
             aim to innovative, build efficiencies and advance capital creation
@@ -20,9 +20,12 @@ export default function IndexPage() {
             high-quality investment opportunities via tokenized listings and a
             robust marketplace
           </p>
-          <button className="btn-primary font-medium text-white text-xl mt-4 md:mt-12 w-full md:w-auto">
-            Request Demo
-          </button>
+          <a
+            href="/contactus"
+            className="btn-primary font-medium text-white text-xl mt-4 md:mt-12 w-full md:w-auto"
+          >
+            Request a demo
+          </a>
         </div>
       </div>
 
@@ -41,9 +44,12 @@ export default function IndexPage() {
             clients with the most efficient and scalable solutions for both
             retail and institutional offerings.
           </p>
-          <button className="btn-primary font-medium text-white text-xl w-full md:w-auto mt-6 md:mt-12">
+          <a
+            href="/about"
+            className="btn-primary font-medium text-white text-xl w-full md:w-auto mt-6 md:mt-12"
+          >
             Learn more About Us
-          </button>
+          </a>
         </div>
       </div>
 
@@ -53,15 +59,18 @@ export default function IndexPage() {
           <h3 className="text-3xl md:text-4xl font-bold text-white text-center">
             Why Tokenize?
           </h3>
-          <p className="text-center text-base mt-4 md:mt-8">
+          <p className="text-center text-base text-white mt-4 md:mt-8">
             Our proprietary suite of services automates every step from issuance
             and fundraising to investor management and annual audits. We take
             pride in framing simple, self-serviced solutions to address complex,
             composite problems.
           </p>
-          <button className="btn-primary font-medium text-white text-xl w-full md:w-auto mt-4 md:mt-8">
+          <a
+            href="/solutions"
+            className="btn-primary font-medium text-white text-xl w-full md:w-auto mt-6 md:mt-12"
+          >
             Access our Solutions
-          </button>
+          </a>
         </div>
       </div>
 
@@ -71,7 +80,7 @@ export default function IndexPage() {
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
             Media Coverage
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 justify-center items-center mt-4 md:mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 justify-center items-center mt-4 md:mt-20">
             <div className="flex items-center justify-center text-center">
               <img alt="COINTELEGRAPH" src="/images/m1.png" />
             </div>
@@ -102,8 +111,8 @@ export default function IndexPage() {
       </div>
 
       {/* Begin new section; Industry Recognition */}
-      <div className="flex flex-col items-center justify-center bg-secondary px-6 py-10 md:py-20">
-        <div className="flex flex-col items-center justify-center text-secondary container px-20">
+      {/* <div className="flex flex-col items-center justify-center bg-secondary px-6 py-10 md:py-20">
+        <div className="flex flex-col items-center justify-center text-secondary container px-0 md:px-20">
           <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
             Industry Recognition
           </h3>
@@ -118,11 +127,12 @@ export default function IndexPage() {
             - Andy Strott, Resolute U.S. Real Estate Fund I
           </p>
         </div>
-      </div>
+      </div> */}
+
       {/* Begin new section; Latest on Tokenizer */}
-      <div className="flex flex-col items-center justify-center bg-white py-10 md:py-32 px-6">
+      <div className="flex flex-col items-center justify-center bg-secondary py-10 md:py-32 px-6">
         <div className="flex flex-col items-center justify-center text-secondary container">
-          <h3 className="text-3xl md:text-4xl font-bold text-primary">
+          <h3 className="text-3xl md:text-4xl font-bold text-primary text-center">
             Latest on Tokenizer
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-20 mt-6 md:mt-12">
@@ -145,9 +155,12 @@ export default function IndexPage() {
               blogLink="https://tokenizer.cc"
             />
           </div>
-          <button className="btn-primary font-medium text-xl mt-6 md:mt-12 w-full md:w-80">
+          <a
+            href="/blog"
+            className="btn-primary font-medium text-xl mt-6 md:mt-12 w-full md:w-80"
+          >
             Discover More
-          </button>
+          </a>
         </div>
       </div>
       {/* Begin new section; Request our Whitepaper */}
@@ -156,7 +169,7 @@ export default function IndexPage() {
           <h3 className="text-3xl md:text-4xl font-bold text-white text-center">
             Request our Whitepaper
           </h3>
-          <p className="text-center text-xl mt-4 md:mt-6">
+          <p className="text-center text-base text-white mt-4 md:mt-6">
             Learn more about what we do and how we do it
           </p>
           <div className="container w-full lg:w-8/12 text-center mt-4 md:mt-12">
@@ -170,7 +183,7 @@ export default function IndexPage() {
                 placeholder="Enter your email"
               />
               <button
-                className="btn-primary text-primary bg-white text-xl mt-4 md:mt-10 w-full md:w-80 px-8"
+                className="btn-secondary text-xl mt-4 md:mt-10 w-full md:w-80 px-8"
                 type="submit"
               >
                 Submit
